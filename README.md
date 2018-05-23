@@ -1,22 +1,2 @@
 # cutefear
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <script src="../fetch.js"></script>
-</head>
-<body>
-  <script>
-    var result = fetch('https://api.github.com')
-    result.then(function(response) {
-      console.log('response', response)
-      console.log('header', response.headers.get('Content-Type'))
-      return response.text()
-    }).then(function(text) {
-      console.log('got text', text)
-    }).catch(function(ex) {
-      console.log('failed', ex)
-    })
-  </script>
-</body>
-</html>
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCiOavgCFXdJO2O9vratj+H5Y++spRR9p470dcPLuz2oRaX+STUj0JQGdrepyQuM/s/eqILxm102i+wYE7lsZgmbs9QOopg9PZW49RMe5zy8vnhGZY/7PXyYXH83i3rDKjqa6QWu/IQp6HFE5/HvAylRCVHFSw2ShcCTWriLU3ZYskoTmeW/cvapvudZ5RJeQPC4wmVQgSrd9T/ieGBPEW5PyyQouvhn9IDc2dJR76/3uWI2Hx9oP67COBXBnpEsruu1z/in1Ehgh8gbDN3L/h77AG5sHV5kPdJnoZO2QCAy8eU58CgsmLkeT8albl2p/SxO7Tvaglddb1Qi8W4BBsV jenkins@CI
